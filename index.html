@@ -1,0 +1,10 @@
+<!doctype html><html><head>
+    <script src="config.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Video Downloader</title><link rel="stylesheet" href="static/style.css"></head><body>
+<div class="orb a"></div><div class="orb b"></div><main><header><div class="logo">VD</div><div><h1>Video Downloader</h1><p>Fast local downloader</p></div></header>
+<section class="card"><span class="badge">YT-DLP + FFMPEG</span><h2>Download in the quality you choose.</h2><p class="muted">The quality list is read from the actual video formats available.</p>
+<div class="url"><input id="url" placeholder="Paste YouTube URL..."><button id="inspect">Analyze</button></div>
+<div id="preview" class="preview hidden"><img id="thumb"><div><h3 id="title"></h3><p id="meta"></p></div></div>
+<div class="controls"><label>Format<select id="format"><option value="video">Video + Audio (MP4)</option><option value="audio">Original Audio</option><option value="mp3">MP3 192 kbps</option></select></label><label>Quality<select id="quality"><option value="best">Analyze a video first</option></select></label></div>
+<button class="download" id="download">⬇ Start Download</button>
+<div id="box" class="hidden"><div class="top"><span id="status">Starting...</span><b id="pct">0%</b></div><div class="bar"><i id="bar"></i></div><div class="stats"><div><small>Speed</small><b id="speed">—</b></div><div><small>Downloaded</small><b id="size">—</b></div><div><small>ETA</small><b id="eta">—</b></div></div><button id="cancel" class="cancel">✕ Cancel</button><a id="file" class="file hidden">⬇ Download completed file</a></div>
+<div id="error" class="error hidden"></div></section><div class="grid"><div><b>🎥 Actual qualities</b><small>Uses available resolutions.</small></div><div><b>⚡ Retries</b><small>Automatic fragment retries.</small></div><div><b>📊 Live stats</b><small>Speed, size and ETA.</small></div></div><footer>Use only for content you are authorized to download.</footer></main><script src="static/app.js"></script></body></html>
